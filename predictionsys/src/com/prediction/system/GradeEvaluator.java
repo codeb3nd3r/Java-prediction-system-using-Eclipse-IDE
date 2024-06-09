@@ -25,8 +25,10 @@ public class GradeEvaluator {
             grade = "C";
         } else if (gpa >= 1.0 && gpa < 2.0) {
             grade = "D";
-        } else {
+        } else if( gpa >= 0 && gpa < 1.0){
             grade = "F";
+        } else {
+            system.out.println("Enter Valid GPA")
         }
 
         if (attendanceRate >= 0.75) {
